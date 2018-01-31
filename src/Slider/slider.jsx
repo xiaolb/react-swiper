@@ -27,7 +27,6 @@ export default class Slide extends React.Component {
         }
         // console.log(1)
         this.setState({nowPage:_n});
-
     }
 
     /*  是否自动轮播  */
@@ -86,7 +85,7 @@ export default class Slide extends React.Component {
 
 
         if(document.body.clientWidth>768) {
-            arrowsNode = <SliderArrows turn={this.turn.bind(this)} />
+            arrowsNode = <SliderArrows turn={this.turn.bind(this)} pausePlay={this.pausePlay.bind(this)} />
             flag = true;
         }; 
 

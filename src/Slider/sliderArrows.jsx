@@ -6,8 +6,8 @@ export default class SliderArrows extends React.Component {
     }
     
     handleArrowClick(option) {
-        this.props.turn(option);
-        
+      this.props.pausePlay();
+      this.props.turn(option);
     }
 
     render() {
